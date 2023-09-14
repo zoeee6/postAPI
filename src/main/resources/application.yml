@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${DATABASE_URL}
+    url: ${DATABASE_URL_POST}
     password: ${DATABASE_PASSWORD}
     username: ${DATABASE_ID}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -12,9 +12,6 @@ spring:
         ddl-auto: create
         format_sql: true
         show-sql: true
-  sql:
-    init:
-      data-locations: classpath*:db/h2/data.sql
 logging:
   level:
     org:
